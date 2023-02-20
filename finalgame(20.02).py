@@ -1,9 +1,10 @@
 import pygame                                               # импорт библиотеки
-
+import sys
+import random
 pygame.init()
 
-W = 900
-H = 900
+W = 500
+H = 500
 
 sc = pygame.display.set_mode((W, H))                        # регулировать размер дисплея (900 на 900/600 на 400)
 pygame.display.set_caption("События от клавиатуры")         # название экрана
@@ -19,21 +20,13 @@ clock = pygame.time.Clock()
 
 sc = pygame.display.set_mode((W, H))
 sc_rect = sc.get_rect()
-pygame.display.set_caption("Класс Rect")
+pygame.display.set_caption("Игра")
 
-hero = pygame.image.load('rat&eg.png')
+komnata1 = pygame.image.load('pixil-frame-0(1).png')
+komnata1_rect = komnata1.get_rect()
+
+hero = pygame.image.load('ris1.png')
 hero_rect = hero.get_rect()
-
-ground = pygame.image.load('fon.png')
-ground = pygame.transform.scale(ground,(ground.get_rect().width*6,ground.get_rect().height//2))            # изменять размеры картинки в surface
-ground_rect = ground.get_rect()
-
-ground_rect.bottom = sc_rect.bottom
-
-hero_rect.bottom = ground_rect.top
-
-ris1 = pygame.image.load('ris1.png')
-ris1_rect = ris1.get_rect()
 
 speed = 5
 
