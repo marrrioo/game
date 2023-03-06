@@ -70,6 +70,16 @@ while 1:
 
     if komnata1_rect.bottom+4 == player_rect.top:
         # print('Написать букву, чтобы войти (L)')
+        # font = pg.font.SysFont('Calibri', 45)
+        #     text1 = font.render(game_over, True, WHITE, 5)
+        #     text_rect = text1.get_rect()
+        #     text_x = sc.get_width() / 2 - text_rect.width / 2
+        #     text_y = sc.get_height() / 2 - text_rect.height / 2
+        #     sc.blit(text1, [text_x, text_y])
+
+
+
+
 
     win.fill((10, 0, 30))
     win.blit(background, background_rect)
