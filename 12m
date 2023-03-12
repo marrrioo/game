@@ -149,6 +149,6 @@ while True:
     print(right, 'right')
     # print(player_rect.x, 'x')
     # print(player_rect.y, 'y')
-    FPS = 30
+    FPS = 60
     pg.display.update()
     clock.tick(FPS)
